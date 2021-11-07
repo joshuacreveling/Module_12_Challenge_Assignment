@@ -76,9 +76,9 @@ Full Model 2 classification report as follows:
 
 ## Summary
 
-When comparing the linear regression model, fit with the oversampeld data vs. fit with the original data, it seems that the although we lose slight precision (1%) in `1` values using the oversampled data, we gain an 8% increase in recall, meaning that 8% more (high-risk loans) are classified correctly when using the oversampled data.  This increse in `1` recall percentage causes an insignificant change for the `0` values so it is a win-win.  
+When comparing the linear regression model, fit with the oversampeld data vs. fit with the original data, we gain about 4% points in balanced accuracy.  Although accuracy is increased, it is important to dig deaper into the metrics (recall and precision) becasue accuracy does not always tell the full story. Although we lose slight precision (1%) in `1` values using the oversampled data, we gain an 8% increase in recall, meaning that 8% more (high-risk loans) are classified correctly when using the oversampled data.  This increase in `1` recall percentage causes an minimal change in recall percentage for the `0` values so it is a win-win.  
 
-As mentioned above, we are more interested in indentifying `1` values since these represent "high risk" loans so the second model is the best fit for this application.  This information could be very beneficial to the firm to make sure that high-risk loans are managed correctly since they pose more potential risk to the firm.  
+The increased percentage in balanced accuracy favors machine learning model 2.  Also, as mentioned above, we are more interested in indentifying `1` values since these represent "high risk" loans so the second model is also the best fit for this application as it does a better job of classifying overall `1` values correctly (measured by recall).  This information could be very beneficial to the firm to make sure that high-risk loans are managed correctly since they pose more potential risk to the firm and may require additional attention if identified.    
 
 ---
 
